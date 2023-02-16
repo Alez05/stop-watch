@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body{
+  margin: 0%;
+  padding: 0%;
+  background: linear-gradient(to left , #251A56, #0D0632);
+}
+
+.timerBtn {
+  width: 90px;
+  height: 30px;
+  border-radius: 12px;
+  border: 2px solid;
+  background-color: #E78E13;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 1.0em;
+}
+
+.timerBtn:hover {
+  cursor: pointer;
+  background: #E9390C;
+  border: 2px solid;
+  transition: 0.4s;
+}
+
+#timeDisplay {
+  font-size: 70px;
+  color: #FFA000;
+  font-family: 'Roboto';
+}
+
+#container {
+  text-align: center;
+  margin: 100px;
+}
+
+h1 {
+  color: #FFA000;
+  font-family: 'Roboto';
+  font-size: 2em;
+}
+
