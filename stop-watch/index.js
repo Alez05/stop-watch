@@ -43,7 +43,7 @@ function updateTime() {
 
   secs = Math.floor((elapsedTime / 1000) % 60);
   mins = Math.floor((elapsedTime / (1000 * 60)) % 60);
-  hrs = Math.floor((elapsedTime / (1000 * 60 * 60)) % 60);
+  hrs = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
 
   secs = pad(secs);
   mins = pad(mins);
@@ -52,6 +52,8 @@ function updateTime() {
   timeDisplay.textContent = `${hrs}:${mins}:${secs}`;
 
   function pad(unit) {
-    return ('0' + unit).length > 2 ? unit : '0' + unit;
+    // return ('0' + unit).length > 2 ? unit : '0' + unit;
+    // return unit > 9 ? unit : '0' + unit;
+    return unit > 9 ? unit : `0${unit}`;
   }
 }
